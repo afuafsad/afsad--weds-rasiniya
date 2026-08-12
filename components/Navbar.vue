@@ -29,18 +29,8 @@
         <a href="#rsvp" class="hover:text-gold-400 transition-colors">RSVP</a>
       </nav>
 
-      <!-- Right Action Controls: Audio Toggle & Quick Share -->
+      <!-- Right Action Controls: Quick Share -->
       <div class="flex items-center gap-2 md:gap-3">
-        <!-- Audio Button -->
-        <button
-          @click="$emit('toggle-audio')"
-          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold glass-card-gold text-gold-300 hover:text-gold-200 transition-all active:scale-95"
-          :title="isPlaying ? 'Mute Music' : 'Play Music'"
-        >
-          <component :is="isPlaying ? Volume2 : VolumeX" class="w-4 h-4 text-gold-400" :class="{ 'animate-pulse': isPlaying }" />
-          <span class="hidden sm:inline">{{ isPlaying ? 'Music ON' : 'Music OFF' }}</span>
-        </button>
-
         <!-- Share Button -->
         <button
           @click="shareInvitation"
@@ -85,7 +75,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import { Volume2, VolumeX, Share2, Menu, X } from 'lucide-vue-next'
+import { Share2, Menu, X } from 'lucide-vue-next'
 
 const props = defineProps({
   isPlaying: {

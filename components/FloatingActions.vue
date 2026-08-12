@@ -14,25 +14,16 @@
       <button
         @click="triggerConfetti"
         class="p-2.5 rounded-full bg-emerald-900 border border-gold-400/40 text-gold-300 hover:text-gold-100 active:scale-90 transition-transform shadow-md"
-        title="Shower Blessings & Confetti"
+        title="Shower Blessings &amp; Confetti"
       >
         <Sparkles class="w-5 h-5 text-gold-400 animate-spin-slow" />
-      </button>
-
-      <!-- Audio Toggle -->
-      <button
-        @click="$emit('toggle-audio')"
-        class="p-2.5 rounded-full bg-emerald-900 border border-gold-400/40 text-gold-300 hover:text-gold-100 active:scale-90 transition-transform shadow-md"
-        :title="isPlaying ? 'Pause Music' : 'Play Music'"
-      >
-        <component :is="isPlaying ? Volume2 : VolumeX" class="w-5 h-5 text-gold-400" />
       </button>
 
       <!-- Map Location -->
       <a
         href="#events"
         class="p-2.5 rounded-full bg-emerald-900 border border-gold-400/40 text-gold-300 hover:text-gold-100 active:scale-90 transition-transform shadow-md"
-        title="Venue & Map"
+        title="Venue &amp; Map"
       >
         <MapPin class="w-5 h-5 text-gold-400" />
       </a>
@@ -41,14 +32,8 @@
 </template>
 
 <script setup>
-import { CheckCircle2, Sparkles, Volume2, VolumeX, MapPin } from 'lucide-vue-next'
+import { CheckCircle2, Sparkles, MapPin } from 'lucide-vue-next'
 import confetti from 'canvas-confetti'
-
-defineProps({
-  isPlaying: Boolean
-})
-
-defineEmits(['toggle-audio'])
 
 const triggerConfetti = () => {
   // Gold & Emerald confetti burst
