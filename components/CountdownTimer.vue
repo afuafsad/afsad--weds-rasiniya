@@ -8,10 +8,10 @@
           The Blessed Countdown
         </div>
         <h2 class="font-cinzel text-3xl md:text-5xl font-bold text-gold-gradient tracking-wide mb-3">
-          Counting Down To Our Wedding Celebration
+          Counting Down To Our Joint Celebration
         </h2>
         <p class="font-sans text-sm md:text-base text-cream-200/90 max-w-lg mx-auto">
-          "In the presence of family and loved ones, our celebration begins on August 30, 2026."
+          "In the presence of family and loved ones, our joint celebration begins on August 30, 2026."
         </p>
       </div>
 
@@ -69,7 +69,7 @@
           Alhamdulillah! The Blessed Day Has Arrived
         </h3>
         <p class="text-cream-200 text-sm md:text-base">
-          Join us today in celebrating the Wedding of Rasniya &amp; Afsad.
+          Join us today in celebrating the Joint Wedding of Afsad &amp; Rasniya and Shamnad &amp; Fabna Sherin.
         </p>
       </div>
 
@@ -132,8 +132,8 @@ const formatNumber = (num) => {
 
 // Google Calendar sync link generator
 const googleCalendarUrl = computed(() => {
-  const title = encodeURIComponent('Wedding Reception of Rasniya & Afsad at Atlantis Convention Centre')
-  const details = encodeURIComponent('Join us for the wedding celebration of Rasniya & Afsad at Atlantis Convention Centre, Vengara, Kerala!')
+  const title = encodeURIComponent('Joint Wedding Reception of Afsad & Rasniya and Shamnad & Fabna Sherin')
+  const details = encodeURIComponent('Join us for the joint wedding celebration of Afsad & Rasniya and Shamnad & Fabna Sherin at Atlantis Convention Centre, Vengara, Kerala!')
   const location = encodeURIComponent('Atlantis Convention Centre, Balanpeedika, Kannattipadi, Kacheripadi Road, Po, Vengara, Kerala 676304')
   const startTime = '20260830T103000Z' // 4:00 PM IST is 10:30 AM UTC
   const endTime = '20260830T153000Z'

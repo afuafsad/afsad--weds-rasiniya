@@ -8,15 +8,15 @@
     ]"
   >
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <!-- Couple Monogram / Brand -->
+      <!-- Dual Monogram Brand -->
       <a href="#hero" class="flex items-center gap-2 group">
         <div class="w-9 h-9 rounded-full bg-gold-gradient p-[1px] shadow-md group-hover:scale-105 transition-transform">
           <div class="w-full h-full bg-emerald-950 rounded-full flex items-center justify-center">
-            <span class="font-cinzel text-xs font-bold text-gold-300">R&A</span>
+            <span class="font-cinzel text-[10px] font-bold text-gold-300">A&amp;S</span>
           </div>
         </div>
-        <span class="font-script text-xl md:text-2xl text-gold-300 tracking-wide font-bold">
-          Rasniya & Afsad
+        <span class="font-script text-lg md:text-xl text-gold-300 tracking-wide font-bold">
+          Afsad &amp; Shamnad's Joint Wedding
         </span>
       </a>
 
@@ -24,12 +24,12 @@
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-cream-200">
         <a href="#hero" class="hover:text-gold-400 transition-colors">Home</a>
         <a href="#countdown" class="hover:text-gold-400 transition-colors">Countdown</a>
-        <a href="#couple" class="hover:text-gold-400 transition-colors">Couple</a>
+        <a href="#couples" class="hover:text-gold-400 transition-colors">The Couples</a>
         <a href="#events" class="hover:text-gold-400 transition-colors">Event Details</a>
         <a href="#rsvp" class="hover:text-gold-400 transition-colors">RSVP</a>
       </nav>
 
-      <!-- Right Action Controls: Quick Share -->
+      <!-- Right Action Controls: Quick Share & Mobile Menu Toggle -->
       <div class="flex items-center gap-2 md:gap-3">
         <!-- Share Button -->
         <button
@@ -65,7 +65,7 @@
       >
         <a href="#hero" @click="mobileMenuOpen = false" class="py-2 hover:text-gold-300 border-b border-emerald-800/50">Home</a>
         <a href="#countdown" @click="mobileMenuOpen = false" class="py-2 hover:text-gold-300 border-b border-emerald-800/50">Countdown</a>
-        <a href="#couple" @click="mobileMenuOpen = false" class="py-2 hover:text-gold-300 border-b border-emerald-800/50">The Couple</a>
+        <a href="#couples" @click="mobileMenuOpen = false" class="py-2 hover:text-gold-300 border-b border-emerald-800/50">The Couples</a>
         <a href="#events" @click="mobileMenuOpen = false" class="py-2 hover:text-gold-300 border-b border-emerald-800/50">Wedding Schedule &amp; Venue</a>
         <a href="#rsvp" @click="mobileMenuOpen = false" class="py-2 hover:text-gold-300">RSVP Confirmation</a>
       </div>
@@ -76,15 +76,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Share2, Menu, X } from 'lucide-vue-next'
-
-const props = defineProps({
-  isPlaying: {
-    type: Boolean,
-    default: false
-  }
-})
-
-defineEmits(['toggle-audio'])
 
 const isScrolled = ref(false)
 const mobileMenuOpen = ref(false)
@@ -97,8 +88,8 @@ const shareInvitation = async () => {
   if (navigator.share) {
     try {
       await navigator.share({
-        title: 'Rasniya & Afsad Wedding Invitation',
-        text: 'Join us in celebrating the Nikah of Rasniya & Afsad on August 30, 2026!',
+        title: 'Joint Wedding Invitation | Afsad & Rasniya | Shamnad & Fabna Sherin',
+        text: 'Join us in celebrating the joint wedding of Afsad & Rasniya and Shamnad & Fabna Sherin on August 30, 2026!',
         url: window.location.href
       })
     } catch (err) {

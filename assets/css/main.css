@@ -33,32 +33,35 @@
   box-shadow: 0 10px 30px -5px rgba(217, 119, 6, 0.15);
 }
 
-/* Golden text gradient */
+/* Golden text gradient with zero clipping */
 .text-gold-gradient {
   background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 45%, #d97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding-left: 0.1em;
+  padding-right: 0.3em; /* Prevents italic 'd' right-edge clipping */
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
 }
 
-.text-gold-glow {
-  text-shadow: 0 0 20px rgba(251, 191, 36, 0.5), 0 0 40px rgba(217, 119, 6, 0.3);
+.font-script {
+  line-height: 1.45 !important;
+  overflow: visible !important;
 }
 
 /* Islamic Arch Frame outline */
 .arch-frame {
-  border-top-left-radius: 50% 30%;
-  border-top-right-radius: 50% 30%;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
-/* Subtle Golden Shimmer animation */
-@keyframes shimmerGold {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
+@media (min-width: 768px) {
+  .arch-frame {
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
   }
 }
 

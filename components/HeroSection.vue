@@ -8,9 +8,9 @@
     <div class="absolute bottom-10 right-10 w-64 h-64 bg-emerald-700/20 rounded-full blur-2xl pointer-events-none"></div>
 
     <!-- Main Content Container with Arch Frame styling -->
-    <div class="relative z-20 max-w-3xl w-full text-center mx-auto">
+    <div class="relative z-20 max-w-4xl w-full text-center mx-auto">
       <!-- Islamic Arch Dome Card Wrapper -->
-      <div class="arch-frame glass-card-gold p-6 md:p-12 relative border border-gold-400/40 shadow-2xl overflow-hidden">
+      <div class="arch-frame glass-card-gold p-6 md:p-12 relative border border-gold-400/40 shadow-2xl overflow-visible">
         <!-- Golden Corner Filigree Accents -->
         <div class="absolute top-3 left-3 text-gold-400/40 text-xl font-amiri select-none">✦</div>
         <div class="absolute top-3 right-3 text-gold-400/40 text-xl font-amiri select-none">✦</div>
@@ -28,42 +28,51 @@
         </div>
 
         <!-- Divider Line with Crescent Star -->
-        <div class="flex items-center justify-center gap-3 my-6">
+        <div class="flex items-center justify-center gap-3 my-4">
           <div class="h-[1px] w-12 md:w-20 bg-gradient-to-r from-transparent to-gold-400/80"></div>
           <div class="text-gold-300 text-lg">☽ <span>★</span></div>
           <div class="h-[1px] w-12 md:w-20 bg-gradient-to-l from-transparent to-gold-400/80"></div>
         </div>
 
         <!-- Invitation Intro Text -->
-        <p class="text-xs md:text-sm font-medium tracking-[0.25em] text-cream-200 uppercase mb-4">
+        <p class="text-xs md:text-sm font-medium tracking-[0.25em] text-cream-200 uppercase mb-2">
           Together with their families
         </p>
+        <div class="inline-block px-4 py-1 rounded-full bg-emerald-950/80 border border-gold-400/30 text-gold-300 text-xs font-cinzel font-bold uppercase tracking-widest mb-4">
+          Joint Wedding Celebration
+        </div>
         <p class="text-sm md:text-base font-cinzel text-gold-200 tracking-wider mb-6">
-          Request the honor of your presence to celebrate the Wedding Reception of
+          Cordially invite you to celebrate the marriage of
         </p>
 
-        <!-- Groom & Bride Names -->
-        <div class="py-4 my-2 relative">
-          <!-- Groom Name -->
-          <h1 class="font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-gold-gradient drop-shadow-lg tracking-wider font-bold mb-2 animate-float">
-            Rasniya
-          </h1>
-
-          <!-- Ampersand with Golden Arch Ring -->
-          <div class="flex items-center justify-center my-1">
-            <div class="w-12 h-12 rounded-full border border-gold-400/50 bg-emerald-950/80 flex items-center justify-center shadow-lg">
-              <span class="font-script text-2xl md:text-3xl text-gold-300">&amp;</span>
-            </div>
+        <!-- Both Couples Names Grid -->
+        <div class="py-4 my-2 relative max-w-2xl mx-auto space-y-6">
+          <!-- Couple 1: Afsad & Rasniya -->
+          <div class="py-6 px-6 md:py-8 md:px-8 rounded-2xl glass-card border border-gold-400/30 shadow-lg overflow-visible">
+            <h1 class="font-script text-4xl sm:text-5xl md:text-6xl text-gold-gradient font-bold drop-shadow-md leading-relaxed py-2">
+              Afsad <span class="text-gold-300">&amp;</span> Rasniya
+            </h1>
           </div>
 
-          <!-- Bride Name -->
-          <h1 class="font-script text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-gold-gradient drop-shadow-lg tracking-wider font-bold mt-2 animate-float" style="animation-delay: 1.5s;">
-            Afsad
-          </h1>
+          <!-- Brotherhood Symbol Divider -->
+          <div class="flex items-center justify-center gap-3">
+            <div class="h-[1px] w-16 bg-gradient-to-r from-transparent to-gold-400"></div>
+            <div class="px-3 py-1 rounded-full bg-emerald-950 border border-gold-400/60 text-gold-300 font-cinzel text-xs font-bold uppercase">
+              ✦ &amp; ✦
+            </div>
+            <div class="h-[1px] w-16 bg-gradient-to-l from-transparent to-gold-400"></div>
+          </div>
+
+          <!-- Couple 2: Shamnad & Fabna Sherin -->
+          <div class="py-6 px-6 md:py-8 md:px-8 rounded-2xl glass-card border border-gold-400/30 shadow-lg overflow-visible">
+            <h1 class="font-script text-4xl sm:text-5xl md:text-6xl text-gold-gradient font-bold drop-shadow-md leading-relaxed py-2">
+              Shamnad <span class="text-gold-300">&amp;</span> Fabna Sherin
+            </h1>
+          </div>
         </div>
 
         <!-- Date & Time Highlight Pill -->
-        <div class="mt-8 inline-block">
+        <div class="mt-6 inline-block">
           <div class="px-6 py-3 rounded-full bg-emerald-900/90 border border-gold-400/50 shadow-xl flex items-center justify-center gap-2 md:gap-3 text-gold-200">
             <Calendar class="w-4 h-4 md:w-5 md:h-5 text-gold-400" />
             <span class="font-cinzel text-sm md:text-lg font-bold tracking-wider">
@@ -77,9 +86,14 @@
           </div>
         </div>
 
+        <!-- Venue Summary Pill -->
+        <div class="mt-3 block text-xs md:text-sm font-sans text-gold-300 font-medium">
+          📍 Atlantis Convention Centre, Vengara
+        </div>
+
         <!-- Subtext -->
-        <p class="mt-6 text-xs md:text-sm font-sans text-cream-300/90 max-w-lg mx-auto leading-relaxed">
-          "May Allah bless this union with happiness, harmony, and eternal love."
+        <p class="mt-4 text-xs md:text-sm font-sans text-cream-300/90 max-w-lg mx-auto leading-relaxed">
+          "May Allah bless both unions with endless joy, harmony, and eternal love."
         </p>
 
         <!-- Action Call Buttons -->
@@ -96,7 +110,7 @@
             class="w-full sm:w-auto px-6 py-3.5 rounded-full glass-card-gold text-gold-200 hover:text-gold-100 font-medium text-sm tracking-wider uppercase flex items-center justify-center gap-2 border border-gold-400/40 hover:border-gold-400 transition-all"
           >
             <MapPin class="w-4 h-4" />
-            View Schedule & Map
+            View Schedule &amp; Map
           </a>
         </div>
       </div>

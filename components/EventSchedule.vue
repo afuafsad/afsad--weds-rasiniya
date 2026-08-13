@@ -8,10 +8,10 @@
           Event Itinerary &amp; Venue
         </div>
         <h2 class="font-cinzel text-3xl md:text-5xl font-bold text-gold-gradient tracking-wide mb-3">
-          Wedding Reception
+          Joint Wedding Celebration
         </h2>
         <p class="font-sans text-sm md:text-base text-cream-200/90 max-w-lg mx-auto">
-          Join us on Sunday, 30th August 2026 for a joyful evening of celebration and feast.
+          Join us on Sunday, 30th August 2026 for a grand evening of celebration and feast for both couples.
         </p>
       </div>
 
@@ -24,7 +24,7 @@
           <div>
             <span class="text-xs font-cinzel font-bold text-gold-400 uppercase tracking-widest">Main Celebration</span>
             <h3 class="font-cinzel text-2xl md:text-3xl font-bold text-gold-200">
-              Grand Wedding Feast &amp; Reception
+              Grand Joint Wedding Feast &amp; Reception
             </h3>
           </div>
         </div>
@@ -54,7 +54,7 @@
         </div>
 
         <p class="text-sm md:text-base text-cream-200/90 leading-relaxed">
-          We warmly invite you and your family to grace the occasion with your blessings, enjoy traditional culinary delights, and celebrate the wedding of Rasniya &amp; Afsad.
+          We warmly invite you and your family to grace the occasion with your blessings, enjoy traditional culinary delights, and celebrate the joint wedding of <strong class="text-gold-300">Afsad &amp; Rasniya</strong> and <strong class="text-gold-300">Shamnad &amp; Fabna Sherin</strong>.
         </p>
       </div>
 
@@ -72,10 +72,7 @@
             Balanpeedika, Kannattipadi, Kacheripadi Road, Po, Vengara, Kerala 676304
           </p>
 
-          <!-- Attire & Dresscode Note -->
-          <div class="py-3 px-4 rounded-xl bg-emerald-950/70 border border-gold-400/30 inline-block text-xs md:text-sm text-gold-300 font-medium my-2">
-            ✨ Dress Code: Elegant Traditional / Festive Formal Attire
-          </div>
+
 
           <!-- Directions Action Buttons -->
           <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -109,8 +106,8 @@ import { computed } from 'vue'
 import { CalendarDays, UtensilsCrossed, Calendar, Clock, MapPin, Navigation, CalendarPlus } from 'lucide-vue-next'
 
 const googleCalendarUrl = computed(() => {
-  const title = encodeURIComponent('Wedding Reception of Rasniya & Afsad at Atlantis Convention Centre')
-  const details = encodeURIComponent('Wedding Celebration & Reception of Rasniya & Afsad at Atlantis Convention Centre, Balanpeedika, Kannattipadi, Kacheripadi Road, Po, Vengara, Kerala 676304. Venue map: https://maps.app.goo.gl/CgChbFE3zeVWFGeSA?g_st=awb')
+  const title = encodeURIComponent('Joint Wedding Reception of Afsad & Rasniya and Shamnad & Fabna Sherin')
+  const details = encodeURIComponent('Joint Wedding Celebration & Reception of Afsad & Rasniya and Shamnad & Fabna Sherin. Atlantis Convention Centre, Vengara, Kerala.')
   const location = encodeURIComponent('Atlantis Convention Centre, Balanpeedika, Kannattipadi, Kacheripadi Road, Po, Vengara, Kerala 676304')
   const startTime = '20260830T103000Z'
   const endTime = '20260830T153000Z'

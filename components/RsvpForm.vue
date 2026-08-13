@@ -11,7 +11,7 @@
           Will You Join Us?
         </h2>
         <p class="font-sans text-sm md:text-base text-cream-200/90 max-w-md mx-auto">
-          Please confirm your presence so we can reserve your seat and prepare for your arrival.
+          Please confirm your presence for the joint wedding feast of Afsad &amp; Rasniya and Shamnad &amp; Fabna Sherin.
         </p>
       </div>
 
@@ -26,7 +26,7 @@
             Jazakallah Khair, {{ formData.name }}!
           </h3>
           <p class="text-cream-100 text-sm max-w-md mx-auto">
-            Your RSVP status <span class="font-bold text-gold-300">"{{ formData.attending === 'yes' ? 'Joyfully Attending' : 'Regretfully Declining' }}"</span> has been recorded. We look forward to celebrating together!
+            Your RSVP status <span class="font-bold text-gold-300">"{{ formData.attending === 'yes' ? 'Joyfully Attending' : 'Regretfully Declining' }}"</span> for the joint wedding feast has been recorded. We look forward to celebrating together!
           </p>
 
           <div class="pt-4">
@@ -71,7 +71,7 @@
           <!-- Attendance Options Radio -->
           <div>
             <label class="block font-cinzel text-xs font-bold text-gold-300 uppercase tracking-wider mb-2">
-              Will You Attend? <span class="text-gold-500">*</span>
+              Will You Attend The Joint Celebration? <span class="text-gold-500">*</span>
             </label>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <label
@@ -108,10 +108,10 @@
             </select>
           </div>
 
-          <!-- Message / Dua for Couple -->
+          <!-- Message / Dua for Couples -->
           <div>
             <label class="block font-cinzel text-xs font-bold text-gold-300 uppercase tracking-wider mb-2">
-              Warm Blessing / Message for Rasniya &amp; Afsad
+              Warm Blessing / Message for the Couples
             </label>
             <textarea
               v-model="formData.message"
@@ -151,11 +151,11 @@ const formData = ref({
 const handleSubmit = () => {
   if (!formData.value.name) return
   submitted.value = true
-  localStorage.setItem('afsad_rasniya_rsvp', JSON.stringify(formData.value))
+  localStorage.setItem('joint_wedding_rsvp', JSON.stringify(formData.value))
 }
 
 onMounted(() => {
-  const saved = localStorage.getItem('afsad_rasniya_rsvp')
+  const saved = localStorage.getItem('joint_wedding_rsvp')
   if (saved) {
     try {
       formData.value = JSON.parse(saved)

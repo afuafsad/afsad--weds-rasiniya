@@ -1,45 +1,5 @@
 <template>
   <div class="min-h-screen bg-emerald-950 text-cream-100 selection:bg-gold-500 selection:text-emerald-950">
-    <!-- Navbar -->
-    <Navbar />
-
-    <!-- Main Content Sections -->
-    <main>
-      <!-- Hero Section -->
-      <HeroSection />
-
-      <!-- Countdown Timer -->
-      <CountdownTimer />
-
-      <!-- Quranic Verse & Islamic Blessing -->
-      <QuranicVerse />
-
-      <!-- The Couple (Rasniya & Afsad) -->
-      <CoupleSection />
-
-      <!-- Event Schedule & Venue Map -->
-      <EventSchedule />
-
-      <!-- RSVP Form -->
-      <RsvpForm />
-    </main>
-
-    <!-- Footer -->
-    <FooterSection />
-
-    <!-- Floating Actions for Mobile (Quick RSVP, Venue Map, Confetti) -->
-    <FloatingActions />
+    <NuxtPage />
   </div>
 </template>
-
-<script setup>
-import Navbar from '~/components/Navbar.vue'
-import HeroSection from '~/components/HeroSection.vue'
-import CountdownTimer from '~/components/CountdownTimer.vue'
-import QuranicVerse from '~/components/QuranicVerse.vue'
-import CoupleSection from '~/components/CoupleSection.vue'
-import EventSchedule from '~/components/EventSchedule.vue'
-import RsvpForm from '~/components/RsvpForm.vue'
-import FooterSection from '~/components/FooterSection.vue'
-import FloatingActions from '~/components/FloatingActions.vue'
-</script>
