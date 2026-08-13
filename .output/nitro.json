@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-12T17:53:24.427Z",
-  "preset": "static",
+  "date": "2026-08-13T04:47:20.809Z",
+  "preset": "cloudflare-worker",
   "framework": {
     "name": "nuxt",
     "version": "3.21.11"
@@ -9,7 +9,8 @@
     "nitro": "2.13.4"
   },
   "commands": {
-    "preview": "npx serve public"
+    "preview": "npx wrangler dev server/index.mjs --site public",
+    "deploy": "npx wrangler deploy"
   },
   "config": {}
 }
